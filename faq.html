@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #41B3A3;
+    }
+    .faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .faq-item .question {
+      padding: 10px;
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+    .faq-item .answer {
+      display: none;
+      padding: 10px;
+    }
+    .faq-item .answer.show {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="faq">
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How do I reset my password?
+      </div>
+      <div class="answer">
+        To reset your password, go to the login page and click on the "Forgot Password" link. Follow the instructions to reset your password.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How can I track my order?
+      </div>
+      <div class="answer">
+        You can track your order by logging into your account and navigating to the order history section. Alternatively, you will receive tracking information via email once your order is shipped.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        What is your return policy?
+      </div>
+      <div class="answer">
+        Our return policy allows for returns within 30 days of the purchase date. Please review our detailed return policy on our website for more information.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How can I contact customer support?
+      </div>
+      <div class="answer">
+        You can contact our customer support by emailing support@example.com or calling 1-800-123-4567.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        What are the accepted payment methods?
+      </div>
+      <div class="answer">
+        We accept payments via credit cards (Visa, MasterCard, American Express) and PayPal.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How long does shipping take?
+      </div>
+      <div class="answer">
+        Shipping times vary depending on your location. Typically, orders are delivered within 5-7 business days.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        Can I cancel my order?
+      </div>
+      <div class="answer">
+        Yes, you can cancel your order as long as it hasn't been shipped. Please contact our customer support to request a cancellation.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How do I update my account information?
+      </div>
+      <div class="answer">
+        You can update your account information by logging into your account and navigating to the profile settings. Make the necessary changes and save your updated information.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        Is there a warranty for your products?
+      </div>
+      <div class="answer">
+        Yes, our products come with a standard 1-year warranty. Please refer to our warranty policy for more details on what it covers.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question" onclick="toggleAnswer(this)">
+        How do I return a defective product?
+      </div>
+      <div class="answer">
+        To return a defective product, please contact our customer support with your order details and a description of the issue. We will guide you through the return process.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleAnswer(question) {
+      const answer = question.nextElementSibling;
+      answer.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
